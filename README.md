@@ -4,7 +4,7 @@
 Dependencies of the project is provided in the requirements.txt file.
 
 ## Installation
-After creation of virtusal environment, we can install the packages using the following command
+After creation of virtual environment, we can install the packages using the following command
 
 pip install -r requirements.txt
 

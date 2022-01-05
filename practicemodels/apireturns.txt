@@ -1,0 +1,524 @@
+Ingested Data: 
+Statistics Summary
+{
+  "lastmonth_activity": {
+    "mean": 165.654, 
+    "median": 73.0, 
+    "std": 284.033
+  }, 
+  "lastyear_activity": {
+    "mean": 1502.923, 
+    "median": 955.0, 
+    "std": 2192.645
+  }, 
+  "number_of_employees": {
+    "mean": 26.885, 
+    "median": 14.0, 
+    "std": 31.354
+  }
+}
+Diagnostics Summary
+{
+  "execution_time": [
+    {
+      "ingest_time_mean": 0.665
+    }, 
+    {
+      "train_time_mean": 2.083
+    }
+  ], 
+  "missing_percentage": {
+    "corporation": {
+      "percentage": 0.0
+    }, 
+    "exited": {
+      "percentage": 0.0
+    }, 
+    "lastmonth_activity": {
+      "percentage": 0.0
+    }, 
+    "lastyear_activity": {
+      "percentage": 0.0
+    }, 
+    "number_of_employees": {
+      "percentage": 0.0
+    }
+  }, 
+  "outdated_packages": "Red = unavailable/outdated/out of version specifier\nGreen = updatable\n+-----------------+-----------+--------+--------+\n| Name            | Installed | Wanted | Latest |\n+-----------------+-----------+--------+--------+\n| click           | 8.0.1     | 7.1.2  | 8.0.3  |\n| cycler          | 0.10.0    | 0.10.0 | 0.11.0 |\n| Flask           | 1.1.2     | 1.1.2  | 2.0.2  |\n| gunicorn        | None      | 20.0.4 | 20.1.0 |\n| itsdangerous    | 1.1.0     | 1.1.0  | 2.0.1  |\n| Jinja2          | 2.11.3    | 2.11.3 | 3.0.3  |\n| joblib          | 1.0.1     | 1.0.1  | 1.1.0  |\n| kiwisolver      | 1.3.1     | 1.3.1  | 1.3.2  |\n| MarkupSafe      | 1.1.1     | 1.1.1  | 2.0.1  |\n| matplotlib      | 3.3.4     | 3.5.0  | 3.5.1  |\n| numpy           | 1.19.5    | 1.21.4 | 1.22.0 |\n| pandas          | 1.2.4     | 1.3.4  | 1.3.5  |\n| Pillow          | 8.2.0     | 8.1.0  | 9.0.0  |\n| pyparsing       | 2.4.7     | 2.4.7  | 3.0.6  |\n| python-dateutil | 2.8.1     | 2.8.1  | 2.8.2  |\n| pytz            | 2021.1    | 2021.1 | 2021.3 |\n| scipy           | 1.6.2     | 1.6.1  | 1.7.3  |\n| seaborn         | 0.11.1    | 0.11.2 | 0.11.2 |\n| six             | 1.15.0    | 1.15.0 | 1.16.0 |\n| scikit-learn    | 0.24.1    | 1.0.1  | 1.0.2  |\n| threadpoolctl   | 2.1.0     | 2.1.0  | 3.0.0  |\n| Werkzeug        | 2.0.1     | 1.0.1  | 2.0.2  |\n| reportlab       | None      | 3.6.3  | 3.6.5  |\n+-----------------+-----------+--------+--------+\n"
+}
+Test Data: 
+Model Predictions
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>ValueError: Invalid file path or buffer object type: &lt;class &#x27;list&#x27;&gt; // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css"
+        type="text/css">
+    <!-- We need to make sure this has a favicon so that the debugger does
+         not accidentally trigger a request to /favicon.ico which might
+         change the application's state. -->
+    <link rel="shortcut icon"
+        href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+    <script type="text/javascript">
+      var TRACEBACK = 2153908349728,
+          CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "6cos0GYvBi4EUiPaW67z";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>ValueError</h1>
+<div class="detail">
+  <p class="errormsg">ValueError: Invalid file path or buffer object type: &lt;class &#x27;list&#x27;&gt;</p>
+</div>
+<h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-2153908349968">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2464</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>def __call__(self, environ, start_response):</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app` which can be</pre>
+<pre class="line before"><span class="ws">        </span>wrapped to applying middleware.&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def __repr__(self):</pre>
+<pre class="line after"><span class="ws">        </span>return &quot;&lt;%s %r&gt;&quot; % (self.__class__.__name__, self.name)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350016">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2450</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">                </span>error = e</pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre>
+<pre class="line after"><span class="ws">                </span>raise</pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)</pre>
+<pre class="line after"><span class="ws">        </span>finally:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350208">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1867</em>,
+      in <code class="function">handle_exception</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span># if we want to repropagate the exception, we can attempt to</pre>
+<pre class="line before"><span class="ws">            </span># raise it with the whole traceback in case we can do that</pre>
+<pre class="line before"><span class="ws">            </span># (the function was actually called from the except part)</pre>
+<pre class="line before"><span class="ws">            </span># otherwise, we just raise the error again</pre>
+<pre class="line before"><span class="ws">            </span>if exc_value is e:</pre>
+<pre class="line current"><span class="ws">                </span>reraise(exc_type, exc_value, tb)</pre>
+<pre class="line after"><span class="ws">            </span>else:</pre>
+<pre class="line after"><span class="ws">                </span>raise e</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">        </span>self.log_exception((exc_type, exc_value, tb))</pre>
+<pre class="line after"><span class="ws">        </span>server_error = InternalServerError()</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350112">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\_compat.py"</cite>,
+      line <em class="line">39</em>,
+      in <code class="function">reraise</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>import collections.abc as collections_abc</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>def reraise(tp, value, tb=None):</pre>
+<pre class="line before"><span class="ws">        </span>if value.__traceback__ is not tb:</pre>
+<pre class="line before"><span class="ws">            </span>raise value.with_traceback(tb)</pre>
+<pre class="line current"><span class="ws">        </span>raise value</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>implements_to_string = _identity</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>else:</pre>
+<pre class="line after"><span class="ws">    </span>iterkeys = lambda d: d.iterkeys()</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350256">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2447</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)</pre>
+<pre class="line before"><span class="ws">        </span>error = None</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">                </span>error = e</pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350160">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1952</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(self, rv, from_error_handler=False):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Given the return value from a view function this finalizes</pre>
+<pre class="line after"><span class="ws">        </span>the request by converting it into a response and invoking the</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350352">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1821</em>,
+      in <code class="function">handle_user_exception</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>return self.handle_http_exception(e)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>handler = self._find_error_handler(e)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>if handler is None:</pre>
+<pre class="line current"><span class="ws">            </span>reraise(exc_type, exc_value, tb)</pre>
+<pre class="line after"><span class="ws">        </span>return handler(e)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def handle_exception(self, e):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Handle an exception that did not have an error handler</pre>
+<pre class="line after"><span class="ws">        </span>associated with it, or that was raised from an error handler.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350400">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\_compat.py"</cite>,
+      line <em class="line">39</em>,
+      in <code class="function">reraise</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>import collections.abc as collections_abc</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>def reraise(tp, value, tb=None):</pre>
+<pre class="line before"><span class="ws">        </span>if value.__traceback__ is not tb:</pre>
+<pre class="line before"><span class="ws">            </span>raise value.with_traceback(tb)</pre>
+<pre class="line current"><span class="ws">        </span>raise value</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>implements_to_string = _identity</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>else:</pre>
+<pre class="line after"><span class="ws">    </span>iterkeys = lambda d: d.iterkeys()</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350448">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1950</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>self.try_trigger_before_first_request_functions()</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(self, rv, from_error_handler=False):</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350496">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1936</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>getattr(rule, &quot;provide_automatic_options&quot;, False)</pre>
+<pre class="line before"><span class="ws">            </span>and req.method == &quot;OPTIONS&quot;</pre>
+<pre class="line before"><span class="ws">        </span>):</pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()</pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class="line current"><span class="ws">        </span>return self.view_functions[rule.endpoint](**req.view_args)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Dispatches the request and on top of that performs request</pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class="line after"><span class="ws">        </span>error handling.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350544">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\PycharmProjects\Udacity_ML\nd0821-c4-starter-code\app.py"</cite>,
+      line <em class="line">33</em>,
+      in <code class="function">predict</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span>def predict():</pre>
+<pre class="line before"><span class="ws">    </span>&quot;&quot;&quot;</pre>
+<pre class="line before"><span class="ws">    </span>Prediction Endpoint</pre>
+<pre class="line before"><span class="ws">    </span>&quot;&quot;&quot;</pre>
+<pre class="line before"><span class="ws">    </span>prediction_file_path = request.get_json()[&#x27;prediction_file_path&#x27;]</pre>
+<pre class="line current"><span class="ws">    </span>dataframe = pd.read_csv(prediction_file_path)</pre>
+<pre class="line after"><span class="ws">    </span>dataframe = dataframe.drop([&#x27;corporation&#x27;, &#x27;exited&#x27;], axis=1)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>predictions = model_predictions(dataframe)</pre>
+<pre class="line after"><span class="ws">    </span>return jsonify(predictions.tolist())</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350592">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py"</cite>,
+      line <em class="line">610</em>,
+      in <code class="function">read_csv</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>kwds_defaults = _refine_defaults_read(</pre>
+<pre class="line before"><span class="ws">        </span>dialect, delimiter, delim_whitespace, engine, sep, defaults={&quot;delimiter&quot;: &quot;,&quot;}</pre>
+<pre class="line before"><span class="ws">    </span>)</pre>
+<pre class="line before"><span class="ws">    </span>kwds.update(kwds_defaults)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line current"><span class="ws">    </span>return _read(filepath_or_buffer, kwds)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>@Appender(</pre>
+<pre class="line after"><span class="ws">    </span>_doc_read_csv_and_table.format(</pre>
+<pre class="line after"><span class="ws">        </span>func_name=&quot;read_table&quot;,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350640">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py"</cite>,
+      line <em class="line">462</em>,
+      in <code class="function">_read</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span># Check for duplicates in names.</pre>
+<pre class="line before"><span class="ws">    </span>_validate_names(kwds.get(&quot;names&quot;, None))</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span># Create the parser.</pre>
+<pre class="line current"><span class="ws">    </span>parser = TextFileReader(filepath_or_buffer, **kwds)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>if chunksize or iterator:</pre>
+<pre class="line after"><span class="ws">        </span>return parser</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>with parser:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350688">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py"</cite>,
+      line <em class="line">819</em>,
+      in <code class="function">__init__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>self.options, self.engine = self._clean_options(options, engine)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>if &quot;has_index_names&quot; in kwds:</pre>
+<pre class="line before"><span class="ws">            </span>self.options[&quot;has_index_names&quot;] = kwds[&quot;has_index_names&quot;]</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line current"><span class="ws">        </span>self._engine = self._make_engine(self.engine)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def close(self):</pre>
+<pre class="line after"><span class="ws">        </span>self._engine.close()</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def _get_options_with_defaults(self, engine):</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350736">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py"</cite>,
+      line <em class="line">1050</em>,
+      in <code class="function">_make_engine</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>if engine not in mapping:</pre>
+<pre class="line before"><span class="ws">            </span>raise ValueError(</pre>
+<pre class="line before"><span class="ws">                </span>f&quot;Unknown engine: {engine} (valid options are {mapping.keys()})&quot;</pre>
+<pre class="line before"><span class="ws">            </span>)</pre>
+<pre class="line before"><span class="ws">        </span># error: Too many arguments for &quot;ParserBase&quot;</pre>
+<pre class="line current"><span class="ws">        </span>return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def _failover_to_python(self):</pre>
+<pre class="line after"><span class="ws">        </span>raise AbstractMethodError(self)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def read(self, nrows=None):</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350784">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py"</cite>,
+      line <em class="line">1867</em>,
+      in <code class="function">__init__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span># GH20529, validate usecol arg before TextReader</pre>
+<pre class="line before"><span class="ws">        </span>self.usecols, self.usecols_dtype = _validate_usecols_arg(kwds[&quot;usecols&quot;])</pre>
+<pre class="line before"><span class="ws">        </span>kwds[&quot;usecols&quot;] = self.usecols</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span># open handles</pre>
+<pre class="line current"><span class="ws">        </span>self._open_handles(src, kwds)</pre>
+<pre class="line after"><span class="ws">        </span>assert self.handles is not None</pre>
+<pre class="line after"><span class="ws">        </span>for key in (&quot;storage_options&quot;, &quot;encoding&quot;, &quot;memory_map&quot;, &quot;compression&quot;):</pre>
+<pre class="line after"><span class="ws">            </span>kwds.pop(key, None)</pre>
+<pre class="line after"><span class="ws">        </span>if self.handles.is_mmap and hasattr(self.handles.handle, &quot;mmap&quot;):</pre>
+<pre class="line after"><span class="ws">            </span># pandas\io\parsers.py:1861: error: Item &quot;IO[Any]&quot; of</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350064">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py"</cite>,
+      line <em class="line">1362</em>,
+      in <code class="function">_open_handles</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>def _open_handles(self, src: FilePathOrBuffer, kwds: Dict[str, Any]) -&gt; None:</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;</pre>
+<pre class="line before"><span class="ws">        </span>Let the readers open IOHanldes after they are done with their potential raises.</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>self.handles = get_handle(</pre>
+<pre class="line after"><span class="ws">            </span>src,</pre>
+<pre class="line after"><span class="ws">            </span>&quot;r&quot;,</pre>
+<pre class="line after"><span class="ws">            </span>encoding=kwds.get(&quot;encoding&quot;, None),</pre>
+<pre class="line after"><span class="ws">            </span>compression=kwds.get(&quot;compression&quot;, None),</pre>
+<pre class="line after"><span class="ws">            </span>memory_map=kwds.get(&quot;memory_map&quot;, False),</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350928">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\common.py"</cite>,
+      line <em class="line">558</em>,
+      in <code class="function">get_handle</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span># read_csv does not know whether the buffer is opened in binary/text mode</pre>
+<pre class="line before"><span class="ws">    </span>if _is_binary_mode(path_or_buf, mode) and &quot;b&quot; not in mode:</pre>
+<pre class="line before"><span class="ws">        </span>mode += &quot;b&quot;</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span># open URLs</pre>
+<pre class="line current"><span class="ws">    </span>ioargs = _get_filepath_or_buffer(</pre>
+<pre class="line after"><span class="ws">        </span>path_or_buf,</pre>
+<pre class="line after"><span class="ws">        </span>encoding=encoding,</pre>
+<pre class="line after"><span class="ws">        </span>compression=compression,</pre>
+<pre class="line after"><span class="ws">        </span>mode=mode,</pre>
+<pre class="line after"><span class="ws">        </span>storage_options=storage_options,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2153908350832">
+  <h4>File <cite class="filename">"C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\common.py"</cite>,
+      line <em class="line">371</em>,
+      in <code class="function">_get_filepath_or_buffer</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>mode=mode,</pre>
+<pre class="line before"><span class="ws">        </span>)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>if not is_file_like(filepath_or_buffer):</pre>
+<pre class="line before"><span class="ws">        </span>msg = f&quot;Invalid file path or buffer object type: {type(filepath_or_buffer)}&quot;</pre>
+<pre class="line current"><span class="ws">        </span>raise ValueError(msg)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>return IOArgs(</pre>
+<pre class="line after"><span class="ws">        </span>filepath_or_buffer=filepath_or_buffer,</pre>
+<pre class="line after"><span class="ws">        </span>encoding=encoding,</pre>
+<pre class="line after"><span class="ws">        </span>compression=compression,</pre></div>
+</div>
+</ul>
+  <blockquote>ValueError: Invalid file path or buffer object type: &lt;class &#x27;list&#x27;&gt;</blockquote>
+</div>
+
+<div class="plain">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\_compat.py&quot;, line 39, in reraise
+    raise value
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\_compat.py&quot;, line 39, in reraise
+    raise value
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py&quot;, line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File &quot;C:\Users\jahed.naghipoor\PycharmProjects\Udacity_ML\nd0821-c4-starter-code\app.py&quot;, line 33, in predict
+    dataframe = pd.read_csv(prediction_file_path)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py&quot;, line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py&quot;, line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py&quot;, line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py&quot;, line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py&quot;, line 1867, in __init__
+    self._open_handles(src, kwds)
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py&quot;, line 1362, in _open_handles
+    self.handles = get_handle(
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\common.py&quot;, line 558, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File &quot;C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\common.py&quot;, line 371, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: &lt;class &#x27;list&#x27;&gt;</textarea>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value="Confirm Pin">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\jahed.naghipoor\PycharmProjects\Udacity_ML\nd0821-c4-starter-code\app.py", line 33, in predict
+    dataframe = pd.read_csv(prediction_file_path)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\common.py", line 558, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "C:\Users\jahed.naghipoor\Anaconda3\Lib\site-packages\pandas\io\common.py", line 371, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'list'>
+
+-->
+Model Score: 0.5714285714285715
